@@ -1,2 +1,2 @@
-# MLOps-EXPERIMENTS-TRACKING-WITH-MLFLOW
-This project demonstrates an end‑to‑end ML pipeline with integrated MLflow for experiment tracking and model management.
+# YT-MLOPS-Experiments-with-MLFlow
+This repo has a complete demonstration of performing experiment tracking using mlflow.
