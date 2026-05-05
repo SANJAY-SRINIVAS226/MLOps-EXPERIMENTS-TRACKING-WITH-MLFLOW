@@ -18,8 +18,8 @@ rf = RandomForestClassifier(random_state=42)
 
 # Defining the parameter grid for GridSearchCV
 param_grid = {
-    'n_estimators': [50, 100, 200],
-    'max_depth': [None, 10, 20]
+    'n_estimators': [10, 50, 100],
+    'max_depth': [None, 10, 20, 30]
 }
 
 # Applying GridSearchCV
@@ -80,7 +80,7 @@ with mlflow.start_run() as parent:
     mlflow.sklearn.log_model(grid_search.best_estimator_, "random_forest")
 
     # Set tags
-    mlflow.set_tag("author", "sanjay srinivas")
+    mlflow.set_tag("author", "Vikash Das")
 
     print(best_params)
     print(best_score)
